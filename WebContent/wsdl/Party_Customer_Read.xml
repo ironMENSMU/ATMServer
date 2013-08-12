@@ -1,0 +1,21 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://smubank.smu.edu.sg/ServiceMediation" xmlns:smr="http://smubank.smu.edu.sg/schemas/SMRequestMessage/">
+   <soap:Header/>
+   <soap:Body>
+      <ser:ServiceMediationOperation>
+         <SMReqMessage>
+            <smr:SMReqHeader>
+               <ConsumerID>ATM</ConsumerID>
+               <TransactionID>7891</TransactionID>
+               <ServiceDomain>Party</ServiceDomain>
+               <OperationName>Party_Customer_Read</OperationName>
+               <CacheEnabled>false</CacheEnabled>
+            </smr:SMReqHeader>
+            <smr:ServiceContent>
+               <CustomerId>0000000209</CustomerId>
+               <PageNumber>1</PageNumber>
+               <PageSize>1</PageSize>
+            </smr:ServiceContent>
+         </SMReqMessage>
+      </ser:ServiceMediationOperation>
+   </soap:Body>
+</soap:Envelope>
